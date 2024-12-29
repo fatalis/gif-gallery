@@ -58,8 +58,8 @@ const load = (event:any) => {
         :style="`aspect-ratio: ${image.width / image.height}`">
         <img :src="image.placeholder" :data-src="image.hq_path" @load="load($event)" alt="">
         <!-- <button class="close-button" @click.stop="closeLightbox">×</button> -->
-        <CopyButton :url="image.hq_path" />
       </div>
+      <CopyButton style="opacity: 1; right: unset" :url="image.hq_path" />
     </div>
   </Teleport>
 </template>
