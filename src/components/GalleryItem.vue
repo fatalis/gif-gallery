@@ -94,6 +94,12 @@ const load = (event:any) => {
   transform: scale(1);
 }
 
+@media (hover: none) {
+  .gallery-item:hover :deep(.copy-button) {
+    opacity: 0;
+  }
+}
+
 .lightbox {
   position: fixed;
   top: 0;
