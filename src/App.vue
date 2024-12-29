@@ -5,7 +5,7 @@ import Notification from './components/Notification.vue'
 
 <template>
   <div class="app-container">
-    <div style="display: flex; justify-content: center;">
+    <div style="display: flex; justify-content: center; margin: 0 2rem 0 2rem">
       <img src="/yappie3.png">
       <h1>itsKatchii GIFs</h1>
     </div>
