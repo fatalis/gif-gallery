@@ -77,7 +77,8 @@ onMounted(async () => {
 
 @media (max-width: 480px) {
   .gallery {
-    column-count: 1;
+    /* column-count: 1; */
+    column-count: 2;
   }
 }
 </style>
