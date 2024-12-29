@@ -25,7 +25,7 @@ onMounted(async () => {
     }
     const path = 'https://r2.gifs.fatalis.pw/' + fnn;
     const hq_path = `https://cdn.discordapp.com/attachments/${chan}/${uid}/${fn}${qs}`;
-    const base64ToBinary = (base64: string) => new Uint8Array(atob(base64).split('').map(x => x.charCodeAt(0)));
+    const base64ToBinary = (base64: string) => Uint8Array.from(atob(base64), c => c.charCodeAt(0));
     const thumbHashFromBase64 = base64ToBinary(placeholder);
     const ph = ThumbHash.thumbHashToDataURL(thumbHashFromBase64);
 
